@@ -1,8 +1,6 @@
 $(document).ready(function () {
 
-    // =========================================
     // TMDB API SETTINGS
-    // =========================================
 
     const API_KEY = "YOUR_TMDB_API_KEY";
 
@@ -11,9 +9,7 @@ $(document).ready(function () {
     const IMAGE_URL = "https://image.tmdb.org/t/p/w500";
 
 
-    // =========================================
     // SPA NAVIGATION
-    // =========================================
 
     function showView(viewID) {
 
@@ -53,9 +49,7 @@ $(document).ready(function () {
     });
 
 
-    // =========================================
     // LOADING MESSAGE
-    // =========================================
 
     function showLoading(elementID) {
 
@@ -65,9 +59,7 @@ $(document).ready(function () {
     }
 
 
-    // =========================================
     // ERROR MESSAGE
-    // =========================================
 
     function showError(message, elementID) {
 
@@ -79,9 +71,7 @@ $(document).ready(function () {
     }
 
 
-    // =========================================
     // CREATE MOVIE CARD
-    // =========================================
 
     function createMovieCard(movie) {
 
@@ -149,9 +139,7 @@ $(document).ready(function () {
     }
 
 
-    // =========================================
     // DISPLAY MOVIE RESULTS
-    // =========================================
 
     function displayMovies(movies, elementID) {
 
@@ -181,9 +169,7 @@ $(document).ready(function () {
     }
 
 
-    // =========================================
     // POPULAR MOVIES
-    // =========================================
 
     function loadPopularMovies() {
 
@@ -222,9 +208,7 @@ $(document).ready(function () {
     }
 
 
-    // =========================================
     // SEARCH MOVIES
-    // =========================================
 
     function searchMovies(searchTerm) {
 
@@ -295,9 +279,7 @@ $(document).ready(function () {
     });
 
 
-    // =========================================
     // LOAD GENRES
-    // =========================================
 
     function loadGenres() {
 
@@ -350,9 +332,7 @@ $(document).ready(function () {
     }
 
 
-    // =========================================
     // LOAD MOVIES BY GENRE
-    // =========================================
 
     function loadMoviesByGenre(genreID) {
 
@@ -412,9 +392,7 @@ $(document).ready(function () {
     });
 
 
-    // =========================================
     // MOVIE DETAILS
-    // =========================================
 
     function showMovieDetails(movieID) {
 
@@ -563,9 +541,7 @@ $(document).ready(function () {
     );
 
 
-    // =========================================
     // FAVORITES
-    // =========================================
 
     function getFavorites() {
 
@@ -669,9 +645,7 @@ $(document).ready(function () {
     );
 
 
-    // =========================================
     // DISPLAY FAVORITES
-    // =========================================
 
     function displayFavorites() {
 
@@ -756,9 +730,7 @@ $(document).ready(function () {
     }
 
 
-    // =========================================
     // REMOVE FAVORITE
-    // =========================================
 
     function removeFavorite(movieID) {
 
@@ -811,9 +783,7 @@ $(document).ready(function () {
     );
 
 
-    // =========================================
     // BACK BUTTON
-    // =========================================
 
     $("#back-button").click(function () {
 
@@ -821,9 +791,7 @@ $(document).ready(function () {
     });
 
 
-    // =========================================
     // INITIAL PAGE LOAD
-    // =========================================
 
     loadGenres();
 
