@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Movie Discovery</title>
+
+    <!-- Main CSS file -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+</head>
+
+<body>
+
+    <!-- ========================= -->
+    <!-- HEADER -->
+    <!-- ========================= -->
+
+    <header>
+
+        <div class="site-header">
+
+            <h1>Movie Discovery</h1>
+
+            <p>Find movies, explore genres, and save your favorites.</p>
+
+        </div>
+
+        <!-- Main Navigation -->
+
+        <nav aria-label="Main Navigation">
+
+            <button id="nav-home">
+                Home
+            </button>
+
+            <button id="nav-search">
+                Search
+            </button>
+
+            <button id="nav-genres">
+                Genres
+            </button>
+
+            <button id="nav-favorites">
+                Favorites
+            </button>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ========================= -->
+    <!-- MAIN CONTENT -->
+    <!-- ========================= -->
+
+    <main id="main-content">
+
+
+        <!-- ========================= -->
+        <!-- HOME / POPULAR MOVIES -->
+        <!-- ========================= -->
+
+        <section id="home-view" class="app-view">
+
+            <h2>Popular Movies</h2>
+
+            <p>
+                Explore popular movies currently available
+                from The Movie Database.
+            </p>
+
+            <!-- Loading message -->
+            <div id="popular-loading"
+                 class="loading-message">
+            </div>
+
+            <!-- Popular movie cards will be inserted here -->
+            <div id="popular-results"
+                 class="movie-grid">
+            </div>
+
+        </section>
+
+
+        <!-- ========================= -->
+        <!-- SEARCH VIEW -->
+        <!-- ========================= -->
+
+        <section id="search-view"
+                 class="app-view">
+
+            <h2>Search Movies</h2>
+
+            <form id="search-form">
+
+                <label for="search-box">
+                    Movie Title
+                </label>
+
+                <input
+                    type="text"
+                    id="search-box"
+                    name="search"
+                    placeholder="Enter a movie title">
+
+                <button type="submit">
+                    Search
+                </button>
+
+            </form>
+
+            <!-- Error or status messages -->
+            <div id="search-message"
+                 aria-live="polite">
+            </div>
+
+            <!-- Search results -->
+            <div id="search-results"
+                 class="movie-grid">
+            </div>
+
+        </section>
+
+
+        <!-- ========================= -->
+        <!-- GENRE VIEW -->
+        <!-- ========================= -->
+
+        <section id="genre-view"
+                 class="app-view">
+
+            <h2>Browse by Genre</h2>
+
+            <label for="genre-select">
+                Select a Genre
+            </label>
+
+            <select id="genre-select">
+
+                <option value="">
+                    Choose a genre
+                </option>
+
+                <!-- Genres added with jQuery -->
+
+            </select>
+
+            <!-- Genre results -->
+            <div id="genre-results"
+                 class="movie-grid">
+            </div>
+
+        </section>
+
+
+        <!-- ========================= -->
+        <!-- MOVIE DETAILS VIEW -->
+        <!-- ========================= -->
+
+        <section id="details-view"
+                 class="app-view">
+
+            <button id="back-button">
+                Back to Results
+            </button>
+
+            <h2>Movie Details</h2>
+
+            <!-- Movie details inserted here -->
+            <div id="movie-details">
+            </div>
+
+        </section>
+
+
+        <!-- ========================= -->
+        <!-- FAVORITES VIEW -->
+        <!-- ========================= -->
+
+        <section id="favorites-view"
+                 class="app-view">
+
+            <h2>My Favorites</h2>
+
+            <p>
+                Movies that you save will appear here.
+            </p>
+
+            <div id="favorites-results"
+                 class="movie-grid">
+            </div>
+
+        </section>
+
+
+        <!-- ========================= -->
+        <!-- GENERAL ERROR MESSAGE -->
+        <!-- ========================= -->
+
+        <section id="error-area"
+                 aria-live="polite">
+
+            <p id="error-message"></p>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- ========================= -->
+    <!-- FOOTER -->
+    <!-- ========================= -->
+
+    <footer>
+
+        <p>
+            Movie Discovery SPA
+        </p>
+
+        <p>
+            IT 4403 Term Project
+        </p>
+
+        <p>
+            Movie data provided by
+            The Movie Database (TMDB).
+        </p>
+
+    </footer>
+
+
+    <!-- Main JavaScript file -->
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>

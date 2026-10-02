@@ -1,0 +1,156 @@
+/* =========================
+   GENERAL PAGE
+========================= */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.site-header h1 {
+    margin-bottom: 5px;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+nav {
+    margin-top: 15px;
+}
+
+nav button {
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+
+/* Keyboard accessibility */
+
+button:focus,
+input:focus,
+select:focus {
+    outline: 3px solid #ffcc00;
+    outline-offset: 2px;
+}
+
+
+/* =========================
+   MAIN CONTENT
+========================= */
+
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 25px;
+}
+
+
+/* Individual SPA views */
+
+.app-view {
+    display: none;
+}
+
+
+/* Home shown when page first loads */
+
+#home-view {
+    display: block;
+}
+
+
+/* =========================
+   MOVIE GRID
+========================= */
+
+.movie-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(200px, 1fr));
+
+    gap: 20px;
+
+    margin-top: 20px;
+}
+
+
+/* =========================
+   MOVIE CARDS
+========================= */
+
+.movie-card {
+    background-color: white;
+
+    border: 1px solid #ccc;
+
+    padding: 15px;
+
+    border-radius: 6px;
+}
+
+.movie-card img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* =========================
+   FORMS
+========================= */
+
+input,
+select,
+button {
+    font-size: 16px;
+}
+
+input,
+select {
+    padding: 8px;
+    margin: 5px;
+}
+
+
+/* =========================
+   STATUS / ERROR MESSAGES
+========================= */
+
+.loading-message {
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+#error-message {
+    font-weight: bold;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
