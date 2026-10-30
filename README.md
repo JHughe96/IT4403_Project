@@ -1,5 +1,5 @@
 # IT4403_Project
-This is the group project for Fall 2026, IT 4403
+This is the group project for Fall '26, IT 4403
 
 Common Movie Card format so all matches:
 <article class="movie-card">
